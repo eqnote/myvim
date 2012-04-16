@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+    <a href="www.google.com">www.google.com</a>
+  </small>
+
+  <nav>
+    <ul>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+      <li><a href="google.com">New</a></li>
+    </ul>
+  </nav>
+</footer>

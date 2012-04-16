@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define ANSWER "Grant"
+
+int main(int argc, const char *argv[])
+{
+    char try[40];
+
+    puts("Who is buried in Grant's tomb");
+    gets(try);
+
+    while (try != ANSWER) {
+        puts("No, that wrong. Try again.");
+        gets(try);
+    }
+
+    puts("That's right!");
+    return 0;
+}

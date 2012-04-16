@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(int argc, const char *argv[])
+{
+    static char temp[100] = "thi";
+    size_t count;
+    size_t count1;
+
+    count = sizeof(char);
+    count1 = sizeof(temp);
+
+    printf("%zu, %zu\n", count, count1);
+
+    return 0;
+}

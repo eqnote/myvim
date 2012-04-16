@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+#define LISTSIZE 5
+
+int main(int argc, const char *argv[])
+{
+    const char *list[LISTSIZE] = {
+        "astronomy", "astounding",
+        "astrophysics", "ostracize",
+        "asterism"
+    };
+
+    for (i = 0; i < LISTSIZE; i++) {
+        if (strncmp(list[i], "astro", 5) == 0) {
+            printf("Found:%s\n", list[i]);
+            count++;
+        }
+    }
+    return 0;
+}

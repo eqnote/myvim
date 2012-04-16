@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#define BUFSIZE 1024
+#define SLEN 81
+
+void append(FILE *source, FILE *dest);
+
+int main(int argc, const char *argv[])
+{
+    FILE *fa;
+    FILE *fb;
+    int files = 0;
+    char file_app[SLEN];
+    char file_src[SLEN];
+    return 0;
+}
+
+void append(FILE *source, FILE *dest)
+{
+    size_t bytes;
+    // allocate noce
+    static char temp[BUFSIZE];
+
+    while ((bytes = fread(temp, sizeof(temp), 1, source)) > 0) {
+        fwrite(temp, sizeof(temp), 1, dest);
+    }
+}
+

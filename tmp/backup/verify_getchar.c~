@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(int argc, const char *argv[])
+{
+    long nc = 1;
+
+    for (; getchar() != EOF;) {
+        nc++;
+    }
+
+    printf("%ld\n", nc);
+    return 0;
+}

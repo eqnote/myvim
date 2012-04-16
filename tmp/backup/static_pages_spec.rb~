@@ -1,0 +1,27 @@
+#coding: utf-8
+require 'spec_helper'
+
+describe "StaticPages" do
+  describe "Home page" do
+    it "should have the content 'Home'" do
+      visit '/static_pages/home'
+      page.should have_selector('title', :text => "阳江刀具网")
+    end
+  end
+  
+  describe "Help page" do
+    it "should have the content 'Home'" do
+      visit '/static_pages/home'
+      page.should have_selector('title', :text => "阳江刀具网 | 首页")
+    end
+  end
+
+  describe "About page" do
+    it "should have the title 'About Us'" do
+      visit '/static_pages/about'
+      page.should have_selector('title', :text => "阳江刀具网 | 关于我们")
+    end
+  end
+
+
+end
