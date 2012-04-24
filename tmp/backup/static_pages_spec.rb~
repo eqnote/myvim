@@ -2,26 +2,21 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+  subject { page }
   describe "Home page" do
-    it "should have the content 'Home'" do
-      visit '/static_pages/home'
-      page.should have_selector('title', :text => "阳江刀具网")
-    end
-  end
-  
-  describe "Help page" do
-    it "should have the content 'Home'" do
-      visit '/static_pages/home'
-      page.should have_selector('title', :text => "阳江刀具网 | 首页")
-    end
+    before { visit root_path}
+
+    it { should have_selector('title', text: full_title(''))}
+    it { should have_selector('title', text: full_title('首页'))}
   end
 
   describe "About page" do
-    it "should have the title 'About Us'" do
-      visit '/static_pages/about'
-      page.should have_selector('title', :text => "阳江刀具网 | 关于我们")
-    end
+      before { visit about_path}
+    it { should have_selector('title', text: full_title('关于我们'))}
   end
 
-
+  describe "Contact page" do
+      before { visit contact_path}
+    it { should have_selector('title', text: full_title('联系我们'))}
+  end
 end

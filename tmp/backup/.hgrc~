@@ -19,15 +19,15 @@ parentrevspec =
 schemes = 
 progress =
 fetch =
-prompt   = ~/lib/dotfiles/mercurial/hg-prompt/prompt.py
-histedit = ~/lib/dotfiles/mercurial/histedit/hg_histedit.py
-hggit    = ~/.hg-git/hggit
+#prompt   = ~/lib/dotfiles/mercurial/hg-prompt/prompt.py
+#histedit = ~/lib/dotfiles/mercurial/histedit/hg_histedit.py
+#hggit    = ~/.hg-git/hggit
 
 [progress]
 delay = 1.0
 
 [web]
-cacerts = /etc/hg-dummy-cert.pem
+#cacerts = /etc/hg-dummy-cert.pem
 
 [schemes]
 webf = ssh://sjl@sjl.webfactional.com/repos/

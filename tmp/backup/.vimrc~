@@ -192,9 +192,9 @@ function! MakeSpacelessIabbrev(from, to)
     execute "iabbrev <silent> ".a:from." ".a:to."<C-R>=EatChar('\\s')<CR>"
 endfunction
 
-call MakeSpacelessIabbrev('sl/',  'http://stevelosh.com/')
-call MakeSpacelessIabbrev('bb/',  'http://bitbucket.org/')
-call MakeSpacelessIabbrev('bbs/', 'http://bitbucket.org/sjl/')
+"call MakeSpacelessIabbrev('sl/',  'http://stevelosh.com/')
+"call MakeSpacelessIabbrev('bb/',  'http://bitbucket.org/')
+"call MakeSpacelessIabbrev('bbs/', 'http://bitbucket.org/sjl/')
 call MakeSpacelessIabbrev('gh/',  'http://github.com/')
 call MakeSpacelessIabbrev('ghs/', 'http://github.com/sjl/')
 

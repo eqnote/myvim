@@ -1,15 +1,31 @@
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  
-    <title>阳江刀具网 | 首页</title>
+<% provide(:title, '首页') -%>
+
+<h1>这是首页，下面是内容</h1>
+
+<p>
+  测试连接页面
+  <a href="www.google.com">连接到google</a>
+</p>
+
+<p>
+  测试读取图片
+  <%= link_to image_tag("rails.png", alt: "测试图片"), 'http://www.googel.com'%>
+</p>
+
+<p>
+  测试登陆页面
+  <form action="git" method="get" accept-charset="utf-8">
+    <div>
+      <tr>
+        <td>用户名:</td>
+        <td><input type="text" name="username" id="" value="username" /></td>
+      </tr>
+      <tr>
+        <td>密码</td>
+        <td><input type="password" name="password" id="" value="password" /></td>
+      </tr>
+    </div>
+    <%= link_to "登陆", '#', class: "btn btn-large btn-primary" %>
     
-  </head>
-
-  <body>
-    <h1>welcome welcom welcome</h1>
-
-    <p>这是一个专做刀具的网站，以下是内容部分.... </p>
-    <a href="google.com">介绍连接</a>
-  </body>
-</html>
+  </form>
+</p>

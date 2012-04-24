@@ -1,17 +1,17 @@
 <header class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-         <%= link_to "sample", '#', id: "logo" %>
-
+          <%= link_to "picture loge", root_path, id: "logo" %>
         <nav>
           <ul class="nav pull-right">
-            <li><%= link_to "Home", root_path %> </li>
-            <li><%= link_to "Help", help_path%> </li>
-            <li><%= link_to "Sign in", '#'%></li>
+            <li><%= link_to "首页", root_path%></li>
+            <li><%= link_to "其他页面1", '#'%></li>
+            <li><%= link_to "其他页面2", '#'%></li>
+            <li><%= link_to "", '#'%></li>
+            <li><%= link_to "关于我们", '#'%></li>
           </ul>
         </nav>
       </div>
     </div>
-  
-</header>
+  </header>
 
